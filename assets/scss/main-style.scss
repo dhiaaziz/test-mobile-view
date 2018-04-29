@@ -109,11 +109,20 @@ span.number-fixed{
   margin-top: 3px;
 }
 
+// input[type="date"]:before {
+//   content: attr(placeholder) !important;
+//   color: #aaa;
+//   margin-right: 0.5em;
+// }
+// input[type="date"]:focus:before,
+// input[type="date"]:valid:before {
+//   content: "";
+// }
 
 .form-group-material{
   @include disp-flex;
   @include justify-content-center;
-  margin: 20px 0;
+  margin: 15px 0;
   padding: 10px 0;
   .form-control-material{
     height: 24px;
@@ -125,13 +134,19 @@ span.number-fixed{
     border: 0;
     border-bottom: 1px solid $color-grey-darker;
     box-sizing: border-box;
-    -webkit-transition : border-color 400ms ease-out;
-    -moz-transition : border-color 400ms ease-out;
-    -o-transition : border-color 400ms ease-out;
-    transition : border-color 400ms ease-out;
+    -webkit-transition : border-color 300ms ease-out;
+    -moz-transition : border-color 300ms ease-out;
+    -o-transition : border-color 300ms ease-out;
+    transition : border-color 300ms ease-out;
     &:focus{
       border-bottom: 2px solid $color-main;
     }
+    // &[type="date"]:before{
+    //   content: attr(placeholder) !important;
+    //   color: #aaa;
+    //   margin-right: 0.5em
+    // }
+
   }
 }
 .btn-main{
@@ -172,6 +187,10 @@ span.number-fixed{
 }
 .login-content-container{
   margin-top: 40%;
+}
+
+.register-content-container{
+  margin-top: 20%;
 }
 .navbar-red{
   background-color: $bg-color-main;

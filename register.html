@@ -15,32 +15,37 @@
     </nav>
     <div class="wrapper">
       <div class="container">
-        <div class="text-center login-content-container">
-          <div class="form-group-material">
-            <span class="number-fixed">(+62)</span><input  class="form-control-material"placeholder="Masukkan No. Handphone Anda" type="text" name="" value="">
-          </div>
-          <div class="form-group-material">
-            <input  class="form-control-material"placeholder="Masukkan Kode PIN Anda" type="text" name="" value="">
-          </div>
+        <div class="heading-container">
+          <a href="#"><span><i class="material-icons">keyboard_arrow_left</i></span></a>
+          <p class="text-center">Buat Akun</p>
         </div>
-        <div class="row">
-          <div class="col-12">
-            <button type="button" class="btn btn-main btn-block">LOGIN</button>
-          </div>
-          <div class="col-6" style="padding-right:5px;">
-            <button type="button" class="btn btn-transparent btn-block">Lanjut tanpa login</button>
-          </div>
-          <div class="col-6" style="padding-left:5px;">
-            <button type="button" class="btn btn-transparent btn-block">Lupa PIN?</button>
-          </div>
+
+        <div class="text-center register-content-container">
+          <form action="">
+            <div class="form-group-material">
+              <input  class="form-control-material" placeholder="Your Date" type="text" onfocus="(this.type='date')"  id="date">
+            </div>
+            <div class="form-group-material">
+              <span class="number-fixed">(+62)</span><input  class="form-control-material" placeholder="Masukkan No. Handphone Anda" type="number" name="" value="">
+            </div>
+            <div class="form-group-material">
+              <input  class="form-control-material"placeholder="Tentukan Kode PIN (4 Digit)" type="password" name="" pattern="[0-9]*" inputmode="numeric" maxlength="4">
+            </div>
+            <div class="form-group-material">
+              <input  class="form-control-material"placeholder="Konfirmasi Kode PIN" type="password" name="" pattern="[0-9]*" inputmode="numeric" maxlength="4">
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <button type="submit" class="btn btn-main btn-block">LANJUTKAN</button>
+                <a type="button" href="verification.html" class="btn btn-main btn-block">LANJUTKAN</a>
+              </div>
+            </div>
+          </form>
         </div>
+
+
       </div>
     </div>
-    <footer class="footer">
-      <div class="text-center">
-        <p>Belum punya akun? <span class="link-footer"><a href="register.html">Daftar Sekarang <i class="material-icons">keyboard_arrow_right</i></a></span></p>
-      </div>
-    </footer>
   </body>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>

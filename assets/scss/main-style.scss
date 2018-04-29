@@ -126,10 +126,13 @@ span.number-fixed{
 // input[type="date"]:valid:before {
 //   content: "";
 // }
-
+// input[type=number].pin-masked {
+//     -webkit-text-security: disc;
+// }
 .form-group-material{
   @include disp-flex;
   @include justify-content-center;
+  align-items: center;
   margin: 15px 0;
   padding: 10px 0;
   .form-control-material{
@@ -149,12 +152,29 @@ span.number-fixed{
     &:focus{
       border-bottom: 2px solid $color-main;
     }
+
     // &[type="date"]:before{
     //   content: attr(placeholder) !important;
     //   color: #aaa;
     //   margin-right: 0.5em
     // }
 
+  }
+  .form-control-material-checkbox{
+    position: relative;
+    bottom: 10px;
+    width: 15%;
+  }
+  .form-control-material-checkbox_info{
+     text-align: left;
+     width: 100%;
+     margin-left: 5px;
+     word-break: break-all;
+     hyphens: auto;
+     a{
+       color: $color-main;
+       text-decoration: underline;
+     }
   }
 }
 .btn-main{
@@ -234,7 +254,7 @@ input.partitioned {
   height: 52px;
   background-color: $footer-bg-color;
   color: $footer-color;
-  font-weight: lighter;
+  font-weight: normal;
   .link-footer{
     color: $footer-color-darker;
     font-weight: bolder;

@@ -95,7 +95,7 @@ html, body{
 
 button{
   margin: 1rem 0 !important;
-  border-radius: 5px !important;
+  border-radius: 8px !important;
   outline:none;
 }
 
@@ -143,7 +143,7 @@ span.number-fixed{
   display: inline;
   color: $color-main;
   // height: 24px;
-  margin-top: 3px;
+  margin-top: 0.05rem;
 }
 
 // input[type="date"]:before {
@@ -169,7 +169,7 @@ input[type=number].pin-masked {
     display: inline-block;
     margin-left: 3px;
     padding-left: 10px;
-    padding-bottom: 3px;
+    padding-bottom: 0.05rem;
     width: 100%;
     border: 0;
     border-bottom: 1px solid $color-grey-darker;
@@ -181,12 +181,6 @@ input[type=number].pin-masked {
     &:focus{
       border-bottom: 2px solid $color-main;
     }
-
-    // &[type="date"]:before{
-    //   content: attr(placeholder) !important;
-    //   color: #aaa;
-    //   margin-right: 0.5em
-    // }
 
   }
   .form-control-material-checkbox{
@@ -216,7 +210,7 @@ input[type=number].pin-masked {
 
 .btn-secondary{
   display: block;
-  margin: 10% auto 0 !important;
+  margin: 2rem auto 0 !important;
   width: auto;
   padding: 14px 14px;
   width: 95%;
@@ -226,7 +220,7 @@ input[type=number].pin-masked {
 
 .btn-transparent{
   background-color: $white;
-  border-radius: 5px;
+  // border-radius: 5px;
   border: 1px solid $color-grey;
   padding: 14px 0;
   font-size: 0.9rem;
@@ -236,7 +230,7 @@ input[type=number].pin-masked {
   padding: 1rem 0;
   font-size: 1.25rem;
   position: relative;
-  // font-weight:;
+  font-weight: bold;
   .material-icons{
     position: absolute;
     // font-size: 2rem;
@@ -247,14 +241,14 @@ input[type=number].pin-masked {
   font-size: 0.95rem;
 }
 .login-content-container{
-  margin-top: 40%;
+  margin-top: 9rem;
 }
 
 .register-content-container{
   margin-top: 2.5rem;
 }
 .verification-content-container{
-  margin-bottom: 30%;
+  margin-bottom: 5.5rem;
 }
 .navbar-red{
   background-color: $bg-color-main;
@@ -265,32 +259,31 @@ input[type=number].pin-masked {
 .navbar .navbar-img_center {
      display:block;
      margin: 0px auto;
-     // width: 90px;
-     // height: 100%;
      max-height: 36px;
 }
 
 // FOR OTP THINGS
 .otp-par{
-  margin-top: 5%;
-  font-weight:  normal;
+  font-size: 0.85em;
+  margin-top: 1rem;
+  font-weight:  bold;
 
 }
 .otp-timer{
   // font-weight: lighter;
 }
 input.partitioned {
-  margin-top: 15px;
-  padding: 0 0 5px 12px;
-  letter-spacing: 46px;
+  margin-top: 1rem;
+  padding: 0 0 5px 14px;
+  letter-spacing: 59px;
   border: 0;
   background-image: linear-gradient(to left, $color-main 65%, rgba(255, 255, 255, 0) 0%);
   background-position: bottom;
-  background-size: 61px 3px;
+  background-size: 74px 3px;
   background-repeat: repeat-x;
-  background-position-x: 35px;
+  background-position-x: 43px;
   font-size: 1.5rem;
-  width: 220px;
+  width: 260px;
   overflow: hidden;
 }
 
@@ -323,7 +316,7 @@ input.partitioned {
   }
   .material-icons{
     vertical-align: middle;
-    margin-left: 12px;
+    margin-left: 1rem;
     color: $black;
   }
 }

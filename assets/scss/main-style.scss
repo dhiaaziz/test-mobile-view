@@ -94,7 +94,7 @@ html, body{
 }
 
 button{
-  margin: 15px 0 !important;
+  margin: 1rem 0 !important;
   border-radius: 5px !important;
   outline:none;
 }
@@ -162,7 +162,7 @@ input[type=number].pin-masked {
   @include disp-flex;
   @include justify-content-center;
   align-items: center;
-  margin: 4% 0;
+  margin: 0.85rem 0;
   padding: 10px 0;
   .form-control-material{
     height: 24px;
@@ -233,7 +233,7 @@ input[type=number].pin-masked {
 }
 
 .heading-container{
-  padding: 5% 0;
+  padding: 1rem 0;
   font-size: 1.25rem;
   position: relative;
   // font-weight:;
@@ -251,7 +251,7 @@ input[type=number].pin-masked {
 }
 
 .register-content-container{
-  margin-top: 15%;
+  margin-top: 2.5rem;
 }
 .verification-content-container{
   margin-bottom: 30%;

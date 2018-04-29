@@ -57,15 +57,44 @@ $white: #fff;
 font-family: FreeSans;
 src: url('../fonts/freesans.ttf'), format('ttf');}
 
+@mixin for-size($range) {
+  $phone-upper-boundary: 600px;
+  $tablet-portrait-upper-boundary: 900px;
+  $tablet-landscape-upper-boundary: 1200px;
+  $desktop-upper-boundary: 1800px;
+
+  @if $range == phone-only {
+    @media (max-width: #{$phone-upper-boundary - 1}) { @content; }
+  } @else if $range == tablet-portrait-up {
+    @media (min-width: $phone-upper-boundary) { @content; }
+  } @else if $range == tablet-landscape-up {
+    @media (min-width: $tablet-portrait-upper-boundary) { @content; }
+  } @else if $range == desktop-up {
+    @media (min-width: $tablet-landscape-upper-boundary) { @content; }
+  } @else if $range == big-desktop-up {
+    @media (min-width: $desktop-upper-boundary) { @content; }
+  }
+}
+
+// usage
+// .my-box {
+//   padding: 10px;
+//
+//   @include for-size(desktop-up) {
+//     padding: 20px;
+//   }
+// }
+
+
 html, body{
   font-family: 'FreeSans', sans-serif;
   font-size: 16px;
   line-height: normal;
-  font-weight: light;
+  font-weight: normal;
 }
 
 button{
-  margin: 15px 0;
+  margin: 15px 0 !important;
   border-radius: 5px !important;
   outline:none;
 }
@@ -126,9 +155,9 @@ span.number-fixed{
 // input[type="date"]:valid:before {
 //   content: "";
 // }
-// input[type=number].pin-masked {
-//     -webkit-text-security: disc;
-// }
+input[type=number].pin-masked {
+    -webkit-text-security: disc;
+}
 .form-group-material{
   @include disp-flex;
   @include justify-content-center;
@@ -186,9 +215,13 @@ span.number-fixed{
 }
 
 .btn-secondary{
-  margin: 20px 0;
+  display: block;
+  margin: 30px auto 0 !important;
+  width: auto;
+  padding: 14px 14px;
+  width: 95%;
   font-size: 0.75rem;
-  font-weight: 100;
+  font-weight: normal;
 }
 
 .btn-transparent{
@@ -218,7 +251,10 @@ span.number-fixed{
 }
 
 .register-content-container{
-  margin-top: 20%;
+  margin-top: 15%;
+}
+.verification-content-container{
+  margin-bottom: 35%;
 }
 .navbar-red{
   background-color: $bg-color-main;
@@ -234,18 +270,31 @@ span.number-fixed{
      max-height: 36px;
 }
 
+// FOR OTP THINGS
+.otp-par{
+  margin-top: 30px;
+  font-weight:  normal;
+
+}
+.otp-timer{
+  // font-weight: lighter;
+}
 input.partitioned {
-  padding-left: 15px;
-  letter-spacing: 42px;
+  margin-top: 15px;
+  padding: 0 0 5px 12px;
+  letter-spacing: 46px;
   border: 0;
-  background-image: linear-gradient(to left, $color-main 70%, rgba(255, 255, 255, 0) 0%);
+  background-image: linear-gradient(to left, $color-main 65%, rgba(255, 255, 255, 0) 0%);
   background-position: bottom;
-  background-size: 50px 1px;
+  background-size: 61px 3px;
   background-repeat: repeat-x;
   background-position-x: 35px;
-  width: 200px;
+  font-size: 1.5rem;
+  width: 220px;
+  overflow: hidden;
 }
 
+//FOOTER
 .footer{
   width: 100%;
   display: block;

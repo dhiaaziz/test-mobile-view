@@ -28,19 +28,20 @@
             <div class="form-group-material">
               <span class="number-fixed">(+62)</span><input  class="form-control-material" placeholder="Masukkan No. Handphone Anda" type="number" name="" value="">
             </div>
+            <!-- <input pattern=".{3,}" title="3 characters minimum"> -->
+            <!-- <input type="password" pattern="\d{4}" title="Inputkan 4 digit angka PIN"  maxlength="4"> -->
             <div class="form-group-material">
-              <input  class="form-control-material pin-masked" placeholder="Tentukan Kode PIN (4 Digit)" type="password" pattern="\d*.{4,4}" name="" maxlength="4">
+              <input  class="form-control-material pin-masked" placeholder="Tentukan Kode PIN (4 Digit)" type="password" pattern="\d{4}" title="Inputkan 4 digit angka PIN"  maxlength="4">
             </div>
             <div class="form-group-material">
-              <input  class="form-control-material pin-masked" placeholder="Konfirmasi Kode PIN" type="password" pattern="\d*.{4,4}" name="" maxlength="4">
+              <input  class="form-control-material pin-masked" placeholder="Konfirmasi Kode PIN" type="password" pattern="\d{4}" title="Inputkan 4 digit angka PIN"  maxlength="4">
             </div>
             <div class="form-group-material form-agreement">
-              <input class="form-control-material-checkbox" type="checkbox" name="agreement" value=""><p class="form-control-material-checkbox_info">Saya setuju dengan <a href="">Ketentuan Penggunaan dan Kebijakan Privasi Aplikasi</a></p>
+              <input class="form-control-material-checkbox" type="checkbox" name="agreement" value=""><p class="form-control-material-checkbox_info">Saya setuju dengan <a href="verification.html">Ketentuan Penggunaan dan Kebijakan Privasi Aplikasi</a></p>
             </div>
             <div class="row">
               <div class="col-12">
                 <button type="submit" class="btn btn-main btn-block">LANJUTKAN</button>
-                <a type="button" href="verification.html" class="btn btn-main btn-block">LANJUTKAN</a>
               </div>
             </div>
           </form>

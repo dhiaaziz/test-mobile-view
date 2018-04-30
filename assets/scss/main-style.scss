@@ -60,11 +60,17 @@ $white: #fff;
 font-family: FreeSans;
 src: url('../fonts/freesans.ttf'), format('ttf');}
 
+//width
+$phone-upper-boundary: 600px;
+$tablet-portrait-upper-boundary: 900px;
+$tablet-landscape-upper-boundary: 1200px;
+$desktop-upper-boundary: 1800px;
+
+//height
+$height-phone-kecil: 520px;
+
 @mixin for-size($range) {
-  $phone-upper-boundary: 600px;
-  $tablet-portrait-upper-boundary: 900px;
-  $tablet-landscape-upper-boundary: 1200px;
-  $desktop-upper-boundary: 1800px;
+
 
   @if $range == phone-only {
     @media (max-width: #{$phone-upper-boundary - 1}) { @content; }
@@ -94,19 +100,25 @@ html, body{
   font-size: 16px;
   line-height: normal;
   font-weight: normal;
+
+  //Prevent Scrolling when keyboard appears
+  @include for-size(phone-only) {
+    overflow: hidden;
+  }
 }
 
+body {
+  //Prevent Scrolling when keyboard appears
+  @include for-size(phone-only) {
+    position: relative;
+  }
+}
 button{
   margin: 0.95rem 0 !important;
   border-radius: 8px !important;
   outline:none;
 }
-html, body {
-  overflow: hidden;
-}
-body {
-  position: relative;
-}
+
 
 
 $main-color :	#e11a31;
@@ -238,6 +250,9 @@ input[type=number].pin-masked {
        text-decoration: underline;
      }
   }
+  @media(max-height: $height-phone-kecil){
+    margin: 0.5rem 0;
+  }
 }
 
 .form-agreement{
@@ -262,6 +277,9 @@ input[type=number].pin-masked {
   width: 95%;
   font-size: 0.75rem;
   font-weight: normal;
+  @media(max-height: $height-phone-kecil){
+    margin: 1rem auto 0 !important;
+  }
 }
 
 .btn-transparent{
@@ -282,6 +300,9 @@ input[type=number].pin-masked {
     // font-size: 2rem;
     vertical-align: middle;
   }
+  @media(max-height: $height-phone-kecil){
+    padding: 1rem 0 0 0;
+  }
 }
 
 .content-container{
@@ -289,13 +310,22 @@ input[type=number].pin-masked {
 }
 .login-content-container{
   margin-top: 9rem;
+  @media(max-height: $height-phone-kecil){
+    margin-top: 4rem;
+  }
 }
 
 .register-content-container{
   margin-top: 1.5rem;
+  @media(max-height: $height-phone-kecil){
+    margin-top: 0;
+  }
 }
 .verification-content-container{
   margin-bottom: 5.5rem;
+  @media(max-height: $height-phone-kecil){
+    margin-bottom: 3.5rem;
+  }
 }
 .navbar-red{
   background-color: $bg-color-main;

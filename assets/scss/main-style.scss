@@ -101,6 +101,12 @@ button{
   border-radius: 8px !important;
   outline:none;
 }
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
+}
 
 
 $main-color :	#e11a31;

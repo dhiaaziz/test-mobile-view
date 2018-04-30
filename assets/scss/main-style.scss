@@ -102,16 +102,16 @@ html, body{
   font-weight: normal;
 
   //Prevent Scrolling when keyboard appears
-  // @include for-size(phone-only) {
-  //   overflow: hidden;
-  // }
+  @include for-size(phone-only) {
+    overflow: hidden;
+  }
 }
 
 body {
   //Prevent Scrolling when keyboard appears
-  // @include for-size(phone-only) {
-  //   position: relative;
-  // }
+  @include for-size(phone-only) {
+    position: relative;
+  }
 }
 button{
   margin: 0.95rem 0 !important;

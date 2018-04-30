@@ -37,7 +37,13 @@
               <input  class="form-control-material pin-masked" placeholder="Konfirmasi Kode PIN" type="password" pattern="\d{4}" title="Inputkan 4 digit angka PIN"  maxlength="4">
             </div>
             <div class="form-group-material form-agreement">
-              <input class="form-control-material-checkbox" type="checkbox" name="agreement" value=""><p class="form-control-material-checkbox_info">Saya setuju dengan <a href="verification.html">Ketentuan Penggunaan dan Kebijakan Privasi Aplikasi</a></p>
+              <label>
+                <!-- Keep the input inside the label -->
+                <input type="checkbox">
+                <!-- make sure the .label-text is right next to the input-->
+                <span class="label-text"></span>
+              </label>
+              <p class="form-control-material-checkbox_info">Saya setuju dengan <a href="verification.html">Ketentuan Penggunaan dan Kebijakan Privasi Aplikasi</a></p>
             </div>
             <div class="row">
               <div class="col-12">

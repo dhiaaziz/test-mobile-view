@@ -12,20 +12,6 @@ html, body {
   font-weight: normal;
 }
 
-@media (max-width: 599px) {
-  /* line 98, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
-  html, body {
-    overflow: hidden;
-  }
-}
-
-@media (max-width: 599px) {
-  /* line 110, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
-  body {
-    position: relative;
-  }
-}
-
 /* line 116, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 button {
   margin: 0.95rem 0 !important;

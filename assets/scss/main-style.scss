@@ -91,9 +91,20 @@ $height-phone-kecil: 520px;
 //   }
 // }
 
-//PRE CONDITION
+//PRE CSS
+
+@font-face {
+  font-family: 'FontMain';
+  src: url('../fonts/helvetica-normal.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/helvetica-normal.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/helvetica-normal.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/helvetica-normal.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/helvetica-normal.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/helvetica-normal.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
 html, body{
-  font-family: Helvetica,"Helvetica Neue";
+  font-family: 'FontMain';//,Helvetica,"Helvetica Neue"
   font-size: 16px;
   line-height: normal;
   font-weight: normal;

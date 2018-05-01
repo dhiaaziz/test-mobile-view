@@ -1,44 +1,52 @@
 @import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
-/* line 95, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+@font-face {
+  font-family: 'FontMain';
+  src: url("../fonts/helvetica-normal.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/helvetica-normal.eot?#iefix") format("embedded-opentype"), url("../fonts/helvetica-normal.woff2") format("woff2"), url("../fonts/helvetica-normal.woff") format("woff"), url("../fonts/helvetica-normal.ttf") format("truetype"), url("../fonts/helvetica-normal.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+
+/* line 106, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 html, body {
-  font-family: Helvetica,"Helvetica Neue";
+  font-family: 'FontMain';
   font-size: 16px;
   line-height: normal;
   font-weight: normal;
 }
 
 @media (max-width: 599px) {
-  /* line 95, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+  /* line 106, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
   html, body {
     overflow: hidden;
   }
 }
 
 @media (max-width: 599px) {
-  /* line 107, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+  /* line 118, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
   body {
     position: relative;
   }
 }
 
-/* line 113, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 124, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 button {
   margin: 0.95rem 0 !important;
   border-radius: 8px !important;
   outline: none;
 }
 
-/* line 124, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 135, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 label {
   cursor: pointer;
 }
 
-/* line 127, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 138, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 label input[type="checkbox"] {
   display: none;
 }
 
-/* line 131, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 142, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 label input[type="checkbox"] + .label-text:before {
   color: #e11a31;
   font-family: "FontAwesome";
@@ -55,38 +63,38 @@ label input[type="checkbox"] + .label-text:before {
   display: inline-block;
 }
 
-/* line 148, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 159, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 label input[type="checkbox"]:checked + .label-text:before {
   content: "\f14a";
 }
 
-/* line 153, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 164, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 .label-text {
   font-size: 1.5em;
 }
 
-/* line 157, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 168, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 input[type="button"],
 input[type="button"]:focus {
   outline: none;
 }
 
-/* line 164, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 175, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 a {
   color: #000;
 }
 
-/* line 166, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 177, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 a:visited {
   color: #000;
 }
 
-/* line 170, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 181, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 *:focus {
   outline: none;
 }
 
-/* line 174, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 185, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #ccc;
@@ -94,41 +102,41 @@ a:visited {
   /* Firefox */
 }
 
-/* line 180, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 191, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: #ccc;
 }
 
-/* line 185, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 196, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 ::-ms-input-placeholder {
   /* Microsoft Edge */
   color: #ccc;
 }
 
-/* line 192, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 203, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 .no-margin {
   margin: 0;
 }
 
-/* line 195, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 206, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 .no-padding {
   padding: 0;
 }
 
-/* line 199, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 210, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 span.number-fixed {
   display: inline;
   color: #e11a31;
   margin-top: 0.05rem;
 }
 
-/* line 206, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 217, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 input[type=number].pin-masked {
   -webkit-text-security: disc;
 }
 
-/* line 209, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 220, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 .form-group-material {
   display: -moz-box;
   display: -webkit-flexbox;
@@ -145,7 +153,7 @@ input[type=number].pin-masked {
   padding: 10px 0;
 }
 
-/* line 215, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 226, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 .form-group-material .form-control-material {
   height: 24px;
   display: inline-block;
@@ -162,44 +170,44 @@ input[type=number].pin-masked {
   transition: border-color 300ms ease-out;
 }
 
-/* line 229, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 240, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 .form-group-material .form-control-material:focus {
   border-bottom: 2px solid #e11a31;
 }
 
-/* line 234, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 245, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 .form-group-material .form-control-material-checkbox {
   position: relative;
   bottom: 10px;
   width: 15%;
 }
 
-/* line 239, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 250, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 .form-group-material .form-control-material-checkbox_info {
   text-align: left;
   width: 70%;
   margin-left: 5px;
 }
 
-/* line 245, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 256, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 .form-group-material .form-control-material-checkbox_info a {
   color: #e11a31;
   text-decoration: underline;
 }
 
 @media (max-height: 520px) {
-  /* line 209, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+  /* line 220, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
   .form-group-material {
     margin: 0.5rem 0;
   }
 }
 
-/* line 256, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 267, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 .form-agreement p {
   margin: 0;
 }
 
-/* line 261, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 272, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 .btn-main {
   background-color: #e11a31;
   color: #fff;
@@ -210,7 +218,7 @@ input[type=number].pin-masked {
   font-size: 0.9rem;
 }
 
-/* line 269, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 280, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 .btn-secondary {
   display: block;
   margin: 2rem auto 0 !important;
@@ -222,13 +230,13 @@ input[type=number].pin-masked {
 }
 
 @media (max-height: 520px) {
-  /* line 269, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+  /* line 280, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
   .btn-secondary {
     margin: 1rem auto 0 !important;
   }
 }
 
-/* line 282, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 293, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 .btn-transparent {
   background-color: #fff;
   border: 1px solid #ccc;
@@ -236,7 +244,7 @@ input[type=number].pin-masked {
   font-size: 0.9rem;
 }
 
-/* line 290, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 301, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 .heading-container {
   padding: 1rem 0;
   font-size: 1.25rem;
@@ -244,85 +252,85 @@ input[type=number].pin-masked {
   font-weight: bold;
 }
 
-/* line 295, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 306, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 .heading-container .material-icons {
   position: absolute;
   vertical-align: middle;
 }
 
 @media (max-height: 520px) {
-  /* line 290, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+  /* line 301, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
   .heading-container {
     padding: 1rem 0 0 0;
   }
 }
 
-/* line 305, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 316, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 .content-container {
   font-size: 0.95rem;
 }
 
-/* line 308, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 319, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 .login-content-container {
   margin-top: 9rem;
 }
 
 @media (max-height: 520px) {
-  /* line 308, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+  /* line 319, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
   .login-content-container {
     margin-top: 4rem;
   }
 }
 
-/* line 315, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 326, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 .register-content-container {
   margin-top: 1.5rem;
 }
 
 @media (max-height: 520px) {
-  /* line 315, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+  /* line 326, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
   .register-content-container {
     margin-top: 0;
   }
 }
 
-/* line 321, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 332, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 .verification-content-container {
   margin-bottom: 5.5rem;
 }
 
 @media (max-height: 520px) {
-  /* line 321, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+  /* line 332, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
   .verification-content-container {
     margin-bottom: 3.5rem;
   }
 }
 
-/* line 327, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 338, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 .navbar-red {
   background-color: #e11a31;
 }
 
-/* line 331, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 342, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 .font-red {
   color: #e11a31;
 }
 
-/* line 335, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 346, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 .navbar .navbar-img_center {
   display: block;
   margin: 0px auto;
   max-height: 36px;
 }
 
-/* line 342, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 353, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 .otp-par {
   font-size: 0.85em;
   margin-top: 1rem;
   font-weight: bold;
 }
 
-/* line 351, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 362, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 input.partitioned {
   margin-top: 1rem;
   padding: 0 0 5px 14px;
@@ -338,7 +346,7 @@ input.partitioned {
   overflow: hidden;
 }
 
-/* line 367, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 378, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 .footer {
   width: 100%;
   display: block;
@@ -350,32 +358,32 @@ input.partitioned {
   font-weight: normal;
 }
 
-/* line 376, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 387, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 .footer .link-footer {
   color: #5e5e5e;
   font-weight: bolder;
 }
 
-/* line 379, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 390, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 .footer .link-footer a {
   color: #656565;
 }
 
-/* line 383, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 394, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 .footer div {
   height: 100%;
   display: table;
   margin: 0 auto;
 }
 
-/* line 387, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 398, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 .footer div p {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
 }
 
-/* line 393, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+/* line 404, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 .footer .material-icons {
   vertical-align: middle;
   margin-left: 1rem;

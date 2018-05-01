@@ -118,7 +118,8 @@ html, body{
 body {
   //Prevent Scrolling when keyboard appears
   @include for-size(phone-only) {
-    position: relative;
+    position: fixed;
+    width: 100%;
   }
 }
 button{

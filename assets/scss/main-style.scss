@@ -269,6 +269,13 @@ input[type=number].pin-masked {
   }
 }
 
+.form-date{
+  background: transparent;
+  &:focus{
+    background: transparent;
+  }
+}
+
 .btn-main{
   background-color: $color-main;
   color: #fff;

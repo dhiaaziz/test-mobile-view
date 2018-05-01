@@ -367,6 +367,7 @@ input.partitioned {
 /* line 408, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 .otp-outer-container {
   width: 260px;
+  overflow: hidden;
   display: block;
   margin: 0 auto;
 }

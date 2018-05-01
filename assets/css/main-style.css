@@ -13,8 +13,6 @@ html, body {
   font-size: 16px;
   line-height: normal;
   font-weight: normal;
-  height: 100%;
-  position: relative;
 }
 
 @media (max-width: 599px) {
@@ -22,12 +20,6 @@ html, body {
   html, body {
     overflow: hidden;
   }
-}
-
-/* line 118, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
-.wrapper {
-  position: fixed;
-  width: 100%;
 }
 
 @media (max-width: 599px) {

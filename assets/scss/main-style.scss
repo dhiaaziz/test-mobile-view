@@ -269,11 +269,21 @@ input[type=number].pin-masked {
   }
 }
 
-.form-date{
-  background: #fff !important; 
-  &:focus{
-    background: #fff !important;
-  }
+//placeholder on date
+.form-date {
+  width: 100%;
+  // color: $color-grey;
+}
+
+.form-date.placeholderclass::before {
+  width: 100%;
+  color: $color-grey;
+  content: attr(placeholder);
+}
+
+.form-date.placeholderclass:hover::before {
+  width: 0%;
+  content: "";
 }
 
 .btn-main{

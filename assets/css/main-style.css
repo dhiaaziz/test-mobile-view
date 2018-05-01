@@ -356,6 +356,8 @@ input.partitioned {
   background-repeat: repeat-x;
   background-position-x: 43px;
   font-size: 1.5rem;
+  width: 100%;
+  overflow: hidden;
 }
 
 /* line 403, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */

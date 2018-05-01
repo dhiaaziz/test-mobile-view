@@ -356,22 +356,8 @@ input.partitioned {
   background-repeat: repeat-x;
   background-position-x: 43px;
   font-size: 1.5rem;
-  width: 100%;
-  overflow: hidden;
-}
-
-/* line 403, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
-.otp-inner-container {
-  left: 0;
-  position: sticky;
-}
-
-/* line 408, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
-.otp-outer-container {
   width: 260px;
   overflow: hidden;
-  display: block;
-  margin: 0 auto;
 }
 
 /* line 416, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */

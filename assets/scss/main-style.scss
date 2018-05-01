@@ -394,23 +394,23 @@ input.partitioned {
   background-repeat: repeat-x;
   background-position-x: 43px;
   font-size: 1.5rem;
-  width: 100%;
+  width: 260px;
   // max-width: 4ch;
   // min-width:260px;
   overflow: hidden;
 }
 
-.otp-inner-container{
-  left: 0;
-  position: sticky;
-}
-
-.otp-outer-container{
-  width:260px;
-  overflow:hidden;
-  display: block;
-  margin: 0 auto;
-}
+// .otp-inner-container{
+//   left: 0;
+//   position: sticky;
+// }
+//
+// .otp-outer-container{
+//   width:260px;
+//   overflow:hidden;
+//   display: block;
+//   margin: 0 auto;
+// }
 
 //FOOTER
 .footer{

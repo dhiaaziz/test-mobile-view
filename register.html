@@ -23,7 +23,7 @@
         <div class="text-center register-content-container">
           <form action="">
             <div class="form-group-material">
-              <input  class="form-control-material form-date placeholderclass" onClick="$(this).removeClass('placeholderclass')"  placeholder="Tanggal Lahir Anda" type="date" id="date">
+              <input  class="form-control-material form-date placeholderclass" onfocus="(this.type='date')" onblur="(this.type='text')"  onClick="$(this).removeClass('placeholderclass')"  placeholder="Tanggal Lahir Anda" type="date" id="date">
             </div>
             <div class="form-group-material">
               <span class="number-fixed">(+62)</span><input  class="form-control-material" placeholder="Masukkan No. Handphone Anda" type="number" value="">

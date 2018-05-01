@@ -112,7 +112,7 @@ html, body{
   // position: relative;
   //Prevent Scrolling when keyboard appears
   @include for-size(phone-only) {
-    overflow: hidden;
+    // overflow: hidden;
   }
 }
 .wrapper{
@@ -394,8 +394,21 @@ input.partitioned {
   background-repeat: repeat-x;
   background-position-x: 43px;
   font-size: 1.5rem;
-  width: 260px;
-  overflow: hidden;
+  width: 100%;
+  // min-width:260px;
+  // overflow: hidden;
+}
+
+.otp-inner-container{
+  left: 0;
+  position: sticky;
+}
+
+.otp-outer-container{
+  width:260px;
+  // overflow:hidden;
+  display: block;
+  margin: 0 auto;
 }
 
 //FOOTER

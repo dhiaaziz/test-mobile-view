@@ -209,12 +209,12 @@ input[type=number].pin-masked {
 
 /* line 272, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 .form-date {
-  background: transparent;
+  background: #fff !important;
 }
 
 /* line 274, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 .form-date:focus {
-  background: transparent;
+  background: #fff !important;
 }
 
 /* line 279, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */

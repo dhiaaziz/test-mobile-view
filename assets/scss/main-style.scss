@@ -270,9 +270,9 @@ input[type=number].pin-masked {
 }
 
 .form-date{
-  background: transparent;
+  background: #fff !important; 
   &:focus{
-    background: transparent;
+    background: #fff !important;
   }
 }
 

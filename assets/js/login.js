@@ -58,6 +58,7 @@ $(document).ready(function(){
       alert("test");
       $('.footer').addClass('hidden-class');
     }else{
+      alert("test ini");
       $('.footer').removeClass('hidden-class');
     }
   });

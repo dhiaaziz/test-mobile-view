@@ -447,7 +447,7 @@ input.partitioned {
 }
 
 @media (max-width: $phone-upper-boundary){
-  // .hidden-class{
-  //   display: none;
-  // }
+  .hidden-class{
+    display: none;
+  }
 }

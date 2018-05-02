@@ -113,7 +113,7 @@ html, body{
   //Prevent Scrolling when keyboard appears
   @include for-size(phone-only) {
     -moz-overflow: hidden;
-    overflow: visible;
+    overflow: auto;
 
   }
 }

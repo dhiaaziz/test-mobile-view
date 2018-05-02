@@ -130,6 +130,10 @@ body {
   //Prevent Scrolling when keyboard appears
   @include for-size(phone-only) {
     // position: fixed;
+      @-moz-document url-prefix(){
+    position: fixed;
+
+    }
     width: 100%;
   }
 }

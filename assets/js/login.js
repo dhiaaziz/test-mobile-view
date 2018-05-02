@@ -1,15 +1,3 @@
-$(document).ready(function(){
-  var _originalSize = $(window).width() + $(window).height()
-  $(window).resize(function(){
-    if($(window).width() + $(window).height() != _originalSize){
-      alert("keyboard show up");
-      $(".copyright_link").css("position","relative");
-    }else{
-      alert("keyboard closed");
-      $(".copyright_link").css("position","fixed");
-    }
-  });
-});
 
 //prevent page resize when android soft keyboard opened
 setTimeout(function () {
@@ -64,13 +52,12 @@ $(document).ready(function(){
   });
 
   //hide footer in case it pushed up when keyboard opened
-
-  $('input').focus(function() {
-    // alert("test");
-     $('.footer').addClass('hidden-class');
-  });
-
-  $('input').focusout(function() {
-     $('.footer').removeClass('hidden-class');
+  var _originalSize = $(window).width() + $(window).height()
+  $(window).resize(function(){
+    if($(window).width() + $(window).height() != _originalSize){
+      $('.footer').addClass('hidden-class');
+    }else{
+      $('.footer').removeClass('hidden-class');
+    }
   });
 });

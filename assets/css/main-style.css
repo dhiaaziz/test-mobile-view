@@ -17,13 +17,6 @@ html, body {
   position: relative;
 }
 
-@media (max-width: 599px) {
-  /* line 106, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
-  html, body {
-    overflow: hidden;
-  }
-}
-
 /* line 118, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 .wrapper {
   position: relative;

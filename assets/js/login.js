@@ -1,6 +1,7 @@
 
 //prevent page resize when android soft keyboard opened
 setTimeout(function () {
+  // alert("test");
     let viewheight = $(window).height();
     let viewwidth = $(window).width();
     let viewport = document.querySelector("meta[name=viewport]");

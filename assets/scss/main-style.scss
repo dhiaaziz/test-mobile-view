@@ -112,7 +112,7 @@ html, body{
   position: relative;
   //Prevent Scrolling when keyboard appears
   @include for-size(phone-only) {
-    -moz-overflow: hidden;
+    overflow: hidden;
     // overflow: auto;
   //   @-moz-document url-prefix(){
   //     overflow: hidden;

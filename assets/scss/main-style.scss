@@ -416,7 +416,7 @@ input.partitioned {
 .footer{
   width: 100%;
   display: block;
-  position: absolute;
+  position: absolute !important;
   bottom: 0;
   height: 52px;
   background-color: $footer-bg-color;

@@ -114,9 +114,9 @@ html, body{
   @include for-size(phone-only) {
     // -moz-overflow: hidden;
     // overflow: auto;
-    @-moz-document url-prefix(){
-      overflow: hidden;
-  }
+  //   @-moz-document url-prefix(){
+  //     overflow: hidden;
+  // }
 
 
 }

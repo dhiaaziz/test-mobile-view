@@ -15,8 +15,11 @@ obj.addEventListener("keydown", stopCarret);
 obj.addEventListener("keyup", stopCarret);
 
 function stopCarret() {
+  // alert("test");
+
 if (obj.value.length > 3){
-  setCaretPosition(obj, 3);
+
+  setCaretPosition(obj, 0);
 }
 }
 
@@ -48,6 +51,7 @@ $(document).ready(function(){
 
     // console.log(curLength,maxLength);
     if (curLength >= maxLength){
+      setCaretPosition(obj, 0);
       $(this).blur();
     }
   });

@@ -20,7 +20,6 @@ html, body {
 @media (max-width: 599px) {
   /* line 106, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
   html, body {
-    -webkit-overflow: visible;
     -moz-overflow: hidden;
   }
 }

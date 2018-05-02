@@ -411,11 +411,4 @@ input.partitioned {
   color: #000;
 }
 
-@media (max-width: 600px) {
-  /* line 450, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
-  .hidden-class {
-    display: none;
-  }
-}
-
 /*# sourceMappingURL=../css/main-style.map */

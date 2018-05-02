@@ -1,3 +1,16 @@
+$(document).ready(function(){
+  var _originalSize = $(window).width() + $(window).height()
+  $(window).resize(function(){
+    if($(window).width() + $(window).height() != _originalSize){
+      alert("keyboard show up");
+      $(".copyright_link").css("position","relative");
+    }else{
+      alert("keyboard closed");
+      $(".copyright_link").css("position","fixed");
+    }
+  });
+});
+
 //prevent page resize when android soft keyboard opened
 setTimeout(function () {
     let viewheight = $(window).height();

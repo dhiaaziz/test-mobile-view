@@ -55,6 +55,7 @@ $(document).ready(function(){
   var _originalSize = $(window).width() + $(window).height()
   $(window).resize(function(){
     if($(window).width() + $(window).height() != _originalSize){
+      alert("test");
       $('.footer').addClass('hidden-class');
     }else{
       $('.footer').removeClass('hidden-class');

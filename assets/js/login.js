@@ -36,8 +36,10 @@ setTimeout(function () {
 //   }
 // }
 
-//blur after reach max length of otp input
+
 $(document).ready(function(){
+  //blur after reach max length of otp input
+
   var maxLength = $('#partitioned').attr('maxlength');
   $('#partitioned').keyup(function(){
     var curLength = $(this).val().length;
@@ -48,5 +50,14 @@ $(document).ready(function(){
     }
   });
 
-  // console.log(maxLength);
+  //hide footer in case it pushed up when keyboard opened
+
+  $('input').focus(function() {
+    // alert("test");
+     $('.footer').addClass('hidden-class');
+  });
+
+  $('input').focusout(function() {
+     $('.footer').removeClass('hidden-class');
+  });
 });

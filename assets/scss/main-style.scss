@@ -445,3 +445,9 @@ input.partitioned {
     color: $black;
   }
 }
+
+@media (max-width: $phone-upper-boundary){
+  .hidden-class{
+    display: none;
+  }
+}

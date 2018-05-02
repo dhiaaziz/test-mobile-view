@@ -17,13 +17,6 @@ html, body {
   position: relative;
 }
 
-@media (max-width: 599px) {
-  /* line 106, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
-  html, body {
-    overflow: hidden;
-  }
-}
-
 /* line 119, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 .wrapper {
   position: relative;
@@ -33,6 +26,7 @@ html, body {
 @media (max-width: 599px) {
   /* line 124, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
   body {
+    position: fixed;
     width: 100%;
   }
 }

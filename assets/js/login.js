@@ -1,12 +1,12 @@
 
 //prevent page resize when android soft keyboard opened
-setTimeout(function () {
-    let viewheight = $(window).height();
-    let viewwidth = $(window).width();
-    let viewport = document.querySelector("meta[name=viewport]");
-    // alert("jalan");
-    viewport.setAttribute("content", "height=" + viewheight + "px, width=" + viewwidth + "px, initial-scale=1.0");
-}, 300);
+// setTimeout(function () {
+//     let viewheight = $(window).height();
+//     let viewwidth = $(window).width();
+//     let viewport = document.querySelector("meta[name=viewport]");
+//     // alert("jalan");
+//     viewport.setAttribute("content", "height=" + viewheight + "px, width=" + viewwidth + "px, initial-scale=1.0");
+// }, 300);
 
 //prevent caret to overflow
 // var obj = document.getElementById('partitioned');

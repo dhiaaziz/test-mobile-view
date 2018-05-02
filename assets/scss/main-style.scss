@@ -112,8 +112,8 @@ html, body{
   position: relative;
   //Prevent Scrolling when keyboard appears
   @include for-size(phone-only) {
-    // -webkit-overflow: visible;
     -moz-overflow: hidden;
+    overflow: visible;
 
   }
 }

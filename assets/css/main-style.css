@@ -21,6 +21,7 @@ html, body {
   /* line 106, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
   html, body {
     -moz-overflow: hidden;
+    overflow: visible;
   }
 }
 

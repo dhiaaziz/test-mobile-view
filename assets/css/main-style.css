@@ -20,7 +20,7 @@ html, body {
 @media (max-width: 599px) {
   /* line 106, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
   html, body {
-    -webkit-overflow: hidden;
+    overflow: hidden;
   }
 }
 
@@ -33,6 +33,7 @@ html, body {
 @media (max-width: 599px) {
   /* line 124, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
   body {
+    -moz-position: fixed;
     width: 100%;
   }
 }

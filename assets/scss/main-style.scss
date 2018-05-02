@@ -109,7 +109,7 @@ html, body{
   line-height: normal;
   font-weight: normal;
   height:100vh;
-  // position: relative;
+  position: relative;
   //Prevent Scrolling when keyboard appears
   @include for-size(phone-only) {
     // overflow: hidden;
@@ -416,7 +416,7 @@ input.partitioned {
 .footer{
   width: 100%;
   display: block;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   height: 52px;
   background-color: $footer-bg-color;

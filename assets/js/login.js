@@ -52,14 +52,14 @@ $(document).ready(function(){
   });
 
   //hide footer in case it pushed up when keyboard opened
-  var _originalSize = $(window).width() + $(window).height()
-  $(window).resize(function(){
-    if($(window).width() + $(window).height() != _originalSize){
-      alert("test");
-      $('.footer').addClass('hidden-class');
-    }else{
-      alert("test ini");
-      $('.footer').removeClass('hidden-class');
-    }
-  });
+  // var _originalSize = $(window).width() + $(window).height()
+  // $(window).resize(function(){
+  //   if($(window).width() + $(window).height() != _originalSize){
+  //     alert("test");
+  //     $('.footer').addClass('hidden-class');
+  //   }else{
+  //     alert("test ini");
+  //     $('.footer').removeClass('hidden-class');
+  //   }
+  // });
 });

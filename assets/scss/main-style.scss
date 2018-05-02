@@ -112,8 +112,8 @@ html, body{
   position: relative;
   //Prevent Scrolling when keyboard appears
   @include for-size(phone-only) {
-    // -webkit-overflow: hidden;
-  
+    -webkit-overflow: hidden;
+
   }
 }
 .wrapper{
@@ -124,7 +124,7 @@ html, body{
 body {
   //Prevent Scrolling when keyboard appears
   @include for-size(phone-only) {
-    -moz-position: fixed;
+    // -moz-position: fixed;
     width: 100%;
   }
 }

@@ -108,7 +108,7 @@ html, body{
   font-size: 16px;
   line-height: normal;
   font-weight: normal;
-  height:100vh;
+  height:100%;
   position: relative;
   //Prevent Scrolling when keyboard appears
   @include for-size(phone-only) {
@@ -116,8 +116,8 @@ html, body{
   }
 }
 .wrapper{
-  // position: fixed;
-  // width: 100%;
+  position: relative;
+  height: calc(100% - 52px);
 }
 
 body {
@@ -341,9 +341,9 @@ input[type=number].pin-masked {
   font-size: 0.95rem;
 }
 .login-content-container{
-  margin-top: 9rem;
+  padding-top: 9rem;
   @media(max-height: $height-phone-kecil){
-    margin-top: 4rem;
+    padding-top: 4rem;
   }
 }
 

@@ -13,8 +13,14 @@ html, body {
   font-size: 16px;
   line-height: normal;
   font-weight: normal;
-  height: 100vh;
+  height: 100%;
   position: relative;
+}
+
+/* line 118, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
+.wrapper {
+  position: relative;
+  height: calc(100% - 52px);
 }
 
 @media (max-width: 599px) {
@@ -287,13 +293,13 @@ input[type=number].pin-masked {
 
 /* line 343, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 .login-content-container {
-  margin-top: 9rem;
+  padding-top: 9rem;
 }
 
 @media (max-height: 520px) {
   /* line 343, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
   .login-content-container {
-    margin-top: 4rem;
+    padding-top: 4rem;
   }
 }
 

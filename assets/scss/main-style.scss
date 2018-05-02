@@ -112,12 +112,11 @@ html, body{
   position: relative;
   //Prevent Scrolling when keyboard appears
   @include for-size(phone-only) {
-    overflow: hidden;
+    // overflow: hidden;
 
   }
 }
 .wrapper{
-  // margin-top: 200px;
   position: relative;
   height: calc(100% - 52px);
 }

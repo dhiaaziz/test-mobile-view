@@ -112,11 +112,16 @@ html, body{
   position: relative;
   //Prevent Scrolling when keyboard appears
   @include for-size(phone-only) {
-    -webkit-overflow: hidden;
-  }
+    overflow: hidden;
+    // overflow: auto;
+  //   @-moz-document url-prefix(){
+  //     overflow: hidden;
+  // }
+
+
+}
 }
 .wrapper{
-  // margin-top: 200px;
   position: relative;
   height: calc(100% - 52px);
 }

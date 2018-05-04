@@ -14,6 +14,11 @@ $bg-color-main: 	#e11a31;
 $black : #000;
 $white: #fff;
 
+$font-main-color: rgba(black, 0.75);
+$border-main-color: rgba(black, 0.75);
+
+
+
 @mixin box_shadow ($level) {
 
     @if $level == 1 {
@@ -65,6 +70,7 @@ $desktop-upper-boundary: 1800px;
 
 //height
 $height-phone-kecil: 520px;
+$height-iphone-5 : 569px;
 
 @mixin for-size($range) {
 
@@ -104,10 +110,12 @@ $height-phone-kecil: 520px;
 }
 
 html, body{
-  font-family: 'FontMain';//,Helvetica,"Helvetica Neue"
+  color: $font-main-color;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: normal;
   font-weight: normal;
+  // letter-spacing: .0125rem;
   height:100%;
   position: relative;
   //Prevent Scrolling when keyboard appears
@@ -117,11 +125,16 @@ html, body{
   //   @-moz-document url-prefix(){
   //     overflow: hidden;
   // }
-
-
+  }
+  @media(max-height: $height-iphone-5){
+    font-size: 15px;
+  }
 }
+.navbar{
+  min-height: 52px;
 }
 .wrapper{
+  // min-height: 52px;
   position: relative;
   height: calc(100% - 52px);
 }
@@ -134,7 +147,7 @@ body {
   }
 }
 button{
-  margin: 0.95rem 0 !important;
+  margin: 0.95rem auto !important;
   border-radius: 8px !important;
   outline:none;
 }
@@ -144,15 +157,17 @@ button{
 $main-color :	#e11a31;
 
 // CUSTOM CHECKBOX
-label{
+label.custom-checkbox{
   cursor: pointer;
-
+  p{
+    display: inline-block;
+  }
   input[type="checkbox"]{
     display: none;
 
-
     +.label-text:before{
-      color : $main-color;
+      color : $font-main-color;
+      display: inline;
 
       font-family: "FontAwesome";
       content:"\f096";
@@ -164,11 +179,12 @@ label{
       line-height: 1;
       -webkit-font-smoothing : antialiased;
       width: 1em;
-      margin: 0 0 5px 33%;
+      margin-right: 10px;
       display: inline-block;
     }
 
     &:checked + .label-text:before{
+      color : $main-color;
       content:"\f14a";
     }
   }
@@ -230,20 +246,24 @@ input[type=number].pin-masked {
     -webkit-text-security: disc;
 }
 .form-group-material{
-  @include disp-flex;
-  @include justify-content-center;
-  align-items: center;
-  margin: 0.85rem 0;
-  padding: 10px 0;
+  // @include disp-flex;
+  // @include justify-content-center;
+  // align-items: center;
+  margin: 1.25rem 0;
+  // padding: 10px 0;
+  // position: relative;
+  // z-index: 1;
+  label.form-label-material{
+    // display: block;
+    font-size: 0.8em;
+  }
+
   .form-control-material{
     height: 24px;
     display: inline-block;
-    margin-left: 3px;
-    padding-left: 10px;
-    padding-bottom: 0.05rem;
     width: 100%;
     border: 0;
-    border-bottom: 1px solid $color-grey-darker;
+    border-bottom: 1px solid $border-main-color;
     box-sizing: border-box;
     -webkit-transition : border-color 300ms ease-out;
     -moz-transition : border-color 300ms ease-out;
@@ -252,23 +272,11 @@ input[type=number].pin-masked {
     &:focus{
       border-bottom: 2px solid $color-main;
     }
+  }
 
-  }
-  .form-control-material-checkbox{
-    position: relative;
-    bottom: 10px;
-    width: 15%;
-  }
-  .form-control-material-checkbox_info{
-     text-align: left;
-     width: 70%;
-     margin-left: 5px;
-     // word-break: break-all;
-     // hyphens: auto;
-     a{
-       color: $color-main;
-       text-decoration: underline;
-     }
+  &.form-agreement{
+    @include disp-flex;
+
   }
   @media(max-height: $height-phone-kecil){
     margin: 0.5rem 0;
@@ -276,8 +284,14 @@ input[type=number].pin-masked {
 }
 
 .form-agreement{
+  // display: flex;
+  // font-size: 0.9rem;
+  margin-bottom: 0;
   p{
     margin: 0;
+  }
+  a{
+    color: $color-main;
   }
 }
 
@@ -299,13 +313,22 @@ input[type=number].pin-masked {
   content: "";
 }
 
-.btn-main{
-  background-color: $color-main;
-  color: #fff;
-  @include box-shadow(1);
-  padding: 14px 0;
-  font-size: 0.9rem;
+.btn{
+  text-transform: capitalize !important;
+  &.btn-center{
+    // display: inline-block;
+    // margin: 0 auto !important;
+  }
+  &.btn-main{
+    background-color: $color-main;
+    color: #fff;
+    @include box-shadow(1);
+    padding: 0.65em 2em;
+    // font-size: 0.9rem;
+    letter-spacing: .0250rem;
+  }
 }
+
 
 .btn-secondary{
   display: block;
@@ -330,15 +353,29 @@ input[type=number].pin-masked {
 }
 
 .heading-container{
-  padding: 1rem 0;
-  font-size: 1.25rem;
+  display: table;
+  width: 100%;
+  padding: 1.5rem 0 0.5rem;
+  // font-size: 0.9rem;
   position: relative;
-  font-weight: bold;
   .material-icons{
     position: absolute;
     // font-size: 2rem;
     vertical-align: middle;
   }
+
+  h1, h2,h3 ,h4 ,h5 ,h6{
+    font-size: 1em;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+
+  }
+  h1{
+    font-weight: bolder;
+  }
+
+
   @media(max-height: $height-phone-kecil){
     padding: 1rem 0 0 0;
   }
@@ -355,7 +392,7 @@ input[type=number].pin-masked {
 }
 
 .register-content-container{
-  margin-top: 1.5rem;
+  // margin-top: 1.5rem;
   @media(max-height: $height-phone-kecil){
     margin-top: 0;
   }

@@ -15,45 +15,55 @@
     </nav>
     <div class="wrapper">
       <div class="container">
-        <div class="heading-container">
-          <a href="login.html"><span><i class="material-icons">keyboard_arrow_left</i></span></a>
-          <p class="text-center">Buat Akun</p>
+        <div class="heading-container text-center">
+          <h1>REGISTRASI AKUN BARU</h1>
         </div>
 
-        <div class="text-center register-content-container">
+        <div class="register-content-container">
           <form action="">
             <div class="form-group-material">
-              <input  class="form-control-material form-date placeholderclass" onfocus="(this.type='date')"  onClick="$(this).removeClass('placeholderclass')"  placeholder="Tanggal Lahir Anda" type="text" id="date">
+              <label for="" class="form-label-material">Tanggal Lahir Anda</label>
+              <input  class="form-control-material form-date"  type="date" id="date">
             </div>
             <div class="form-group-material">
-              <span class="number-fixed">(+62)</span><input  class="form-control-material" placeholder="Masukkan No. Handphone Anda" type="number" value="">
+              <label for="" class="form-label-material">Nomor HP Anda</label>
+              <input  class="form-control-material" type="number" value="">
             </div>
             <!-- <input pattern=".{3,}" title="3 characters minimum"> -->
             <!-- <input type="password" pattern="\d{4}" title="Inputkan 4 digit angka PIN"  maxlength="4"> -->
             <div class="form-group-material">
-              <input  class="form-control-material pin-masked" placeholder="Tentukan Kode PIN (4 Digit)" type="password" pattern="\d{4}" title="Inputkan 4 digit angka PIN"  maxlength="4">
+              <label for="" class="form-label-material">PIN</label>
+              <input  class="form-control-material pin-masked" type="password" pattern="\d{4}" title="Inputkan 4 digit angka PIN"  maxlength="4">
             </div>
             <div class="form-group-material">
-              <input  class="form-control-material pin-masked" placeholder="Konfirmasi Kode PIN" type="password" pattern="\d{4}" title="Inputkan 4 digit angka PIN"  maxlength="4">
+              <label for="" class="form-label-material">Konfirmasi PIN</label>
+              <input  class="form-control-material pin-masked" type="password" pattern="\d{4}" title="Inputkan 4 digit angka PIN"  maxlength="4">
             </div>
             <div class="form-group-material form-agreement">
-              <label>
-                <!-- Keep the input inside the label -->
-                <input type="checkbox">
-                <!-- make sure the .label-text is right next to the input-->
-                <span class="label-text"></span>
-              </label>
-              <p class="form-control-material-checkbox_info">Saya setuju dengan <a href="verification.html">Ketentuan Penggunaan dan Kebijakan Privasi Aplikasi</a></p>
+              <div class="checkbox-control">
+                <label class="custom-checkbox">
+                  <!-- Keep the input inside the label -->
+                    <input type="checkbox">
+                    <!-- make sure the .label-text is right next to the input-->
+                    <span class="label-text"></span>
+                </label>
+              </div>
+              <div class="checkbox-label">
+                <p>Saya setuju dengan <a href="verification.html">Ketentuan Penggunaan dan Kebijakan Privasi Aplikasi </a>Lorem ipsum dolor sit amet</p>
+              </div>
             </div>
             <div class="row">
-              <div class="col-12">
-                <button type="submit" class="btn btn-main btn-block">LANJUTKAN</button>
+              <div class="col-12 text-center">
+                <button type="submit" class="btn btn-main">REGISTRASI</button>
               </div>
             </div>
           </form>
         </div>
-
-
+      </div>
+      <div class="footer">
+        <div class="text-center">
+          <p>Sudah punya akun? <span class="link-footer"><a href="register.html">LOGIN Sekarang <i class="material-icons">keyboard_arrow_right</i></a></span></p>
+        </div>
       </div>
     </div>
   </body>

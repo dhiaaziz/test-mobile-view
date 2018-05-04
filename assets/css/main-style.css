@@ -28,7 +28,7 @@ html, body {
 @media (max-height: 569px) {
   /* line 112, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
   html, body {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 
@@ -312,7 +312,7 @@ input[type=number].pin-masked {
 
 /* line 374, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 .heading-container h1 {
-  font-weight: bold;
+  font-weight: 500;
 }
 
 @media (max-height: 520px) {

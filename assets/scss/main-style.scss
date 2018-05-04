@@ -4,7 +4,7 @@
 $color-main: 	#e11a31;
 $color-grey: #ccc;
 $color-grey-darker: #424242;
-$footer-bg-color: #f5f5f5;
+$footer-bg-color: #D8D8D8;
 
 $footer-color: #656565;
 $footer-color-darker: #5e5e5e;
@@ -127,7 +127,7 @@ html, body{
   // }
   }
   @media(max-height: $height-iphone-5){
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 .navbar{
@@ -372,7 +372,7 @@ input[type=number].pin-masked {
 
   }
   h1{
-    font-weight: bolder;
+    font-weight: bold;
   }
 
 
@@ -464,7 +464,7 @@ input.partitioned {
   bottom: 0;
   height: 52px;
   background-color: $footer-bg-color;
-  color: $footer-color;
+  color: $font-main-color;
   font-weight: normal;
   .link-footer{
     color: $footer-color-darker;

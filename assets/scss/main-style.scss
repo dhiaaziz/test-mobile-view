@@ -468,9 +468,9 @@ input.partitioned {
   font-weight: normal;
   .link-footer{
     color: $footer-color-darker;
-    font-weight: bolder;
+    font-weight: 600;
     a{
-      color: $footer-color;
+      color: $font-main-color;
     }
   }
   div{

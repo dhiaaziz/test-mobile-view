@@ -413,12 +413,12 @@ input.partitioned {
 /* line 469, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 .footer .link-footer {
   color: #5e5e5e;
-  font-weight: bolder;
+  font-weight: 600;
 }
 
 /* line 472, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */
 .footer .link-footer a {
-  color: #656565;
+  color: rgba(0, 0, 0, 0.75);
 }
 
 /* line 476, /Users/dhiaaziz/Documents/kerja/freelance/loginpage/assets/scss/main-style.scss */

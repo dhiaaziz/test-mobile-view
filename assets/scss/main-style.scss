@@ -71,6 +71,8 @@ $desktop-upper-boundary: 1800px;
 //height
 $height-phone-kecil: 520px;
 $height-iphone-5 : 569px;
+$width-iphone-5 : 330px;
+
 
 @mixin for-size($range) {
 
@@ -130,25 +132,41 @@ html, body{
     font-size: 15px;
   }
 }
+body {
+  //Prevent Scrolling when keyboard appears
+  @include for-size(phone-only) {
+    position: fixed;
+    // width: 100%;
+  }
+}
 .navbar{
   min-height: 52px;
 }
 .wrapper{
   // min-height: 52px;
   position: relative;
-  height: calc(100% - 52px);
+  height: calc(100% - 66px); //52px = header height ,14px = margin top img
+  margin-bottom: -52px;
 }
+.login-img-container{
+  margin: 14px 0 0;
+  height: 10rem;
+  border: 2px solid $color-main;
 
-body {
-  //Prevent Scrolling when keyboard appears
-  @include for-size(phone-only) {
-    position: fixed;
+  img{
+    // max-height: 10px;
+    display: inline-block;
     width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    margin: 0 auto;
   }
 }
+
+
 button{
   margin: 0.95rem auto !important;
-  border-radius: 8px !important;
+  border-radius: 6px !important;
   outline:none;
   @media(max-height: $height-iphone-5){
     margin: 0.75rem auto !important;
@@ -327,7 +345,7 @@ input[type=number].pin-masked {
     background-color: $color-main;
     color: #fff;
     @include box-shadow(1);
-    padding: 0.65em 2em;
+    padding: 0.5em 0;
     // font-size: 0.9rem;
     letter-spacing: .0250rem;
   }
@@ -350,13 +368,21 @@ input[type=number].pin-masked {
 
 .btn-transparent{
   background-color: $white;
+  color: $main-color;
+  font-weight: 500;
+  padding: 0.1rem;
+  letter-spacing: .025rem;
   // border-radius: 5px;
-  border: 1px solid $color-grey;
-  padding: 14px 0;
-  font-size: 0.9rem;
+  // border: 1px solid $color-grey;
+  border: 0;
+  // padding: 14px 0;
+  font-size: 1rem;
 }
 
 .heading-container{
+  &.login{
+    padding-bottom: 0;
+  }
   display: table;
   width: 100%;
   padding: 1.5rem 0 0.5rem;
@@ -383,15 +409,16 @@ input[type=number].pin-masked {
   @media(max-height: $height-phone-kecil){
     padding: 1rem 0 0 0;
   }
+
 }
 
 .content-container{
   font-size: 0.95rem;
 }
 .login-content-container{
-  padding-top: 9rem;
+  // padding-top: 9rem;
   @media(max-height: $height-phone-kecil){
-    padding-top: 4rem;
+    // padding-top: 4rem;
   }
 }
 
@@ -462,11 +489,12 @@ input.partitioned {
 
 //FOOTER
 .footer{
+  z-index: 10;
   width: 100%;
   display: block;
-  position: absolute !important;
+  // position: absolute !important;
   bottom: 0;
-  height: 52px;
+  // height: 52px;
   background-color: $footer-bg-color;
   color: $font-main-color;
   font-weight: normal;
@@ -492,6 +520,13 @@ input.partitioned {
     margin-left: 1rem;
     color: $black;
   }
+  @media (max-width: $width-iphone-5){
+    font-size: 14px;
+  }
+}
+
+.footer, .push{
+  height: 52px;
 }
 
 @media (max-width: $phone-upper-boundary){

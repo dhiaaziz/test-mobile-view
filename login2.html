@@ -15,55 +15,41 @@
     </nav>
     <div class="wrapper">
       <div class="container">
-        <div class="heading-container text-center">
-          <h1>REGISTRASI AKUN BARU</h1>
+        <div class="login-img-container">
+          <img src="assets/img/img_dummy.jpg" alt="">
+        </div>
+        <div class="heading-container text-center login">
+          <h1>LOGIN</h1>
         </div>
 
-        <div class="register-content-container">
+        <div class="login-content-container">
           <form action="">
             <div class="form-group-material">
-              <label for="" class="form-label-material">Tanggal Lahir Anda</label>
-              <input  class="form-control-material form-date"  type="date" id="date">
-            </div>
-            <div class="form-group-material">
-              <label for="" class="form-label-material">Nomor HP Anda</label>
+              <label for="" class="form-label-material">No. HP Anda</label>
               <input  class="form-control-material" type="number" value="">
             </div>
             <!-- <input pattern=".{3,}" title="3 characters minimum"> -->
             <!-- <input type="password" pattern="\d{4}" title="Inputkan 4 digit angka PIN"  maxlength="4"> -->
             <div class="form-group-material">
-              <label for="" class="form-label-material">PIN</label>
+              <label for="" class="form-label-material">Kode PIN</label>
               <input  class="form-control-material pin-masked" type="password" pattern="\d{4}" title="Inputkan 4 digit angka PIN"  maxlength="4">
-            </div>
-            <div class="form-group-material">
-              <label for="" class="form-label-material">Konfirmasi PIN</label>
-              <input  class="form-control-material pin-masked" type="password" pattern="\d{4}" title="Inputkan 4 digit angka PIN"  maxlength="4">
-            </div>
-            <div class="form-group-material form-agreement">
-              <div class="checkbox-control">
-                <label class="custom-checkbox">
-                  <!-- Keep the input inside the label -->
-                    <input type="checkbox">
-                    <!-- make sure the .label-text is right next to the input-->
-                    <span class="label-text"></span>
-                </label>
-              </div>
-              <div class="checkbox-label">
-                <p>Saya setuju dengan <a href="verification.html">Ketentuan Penggunaan dan Kebijakan Privasi Aplikasi </a>Lorem ipsum dolor sit amet</p>
-              </div>
             </div>
             <div class="row">
-              <div class="col-8 mr-auto ml-auto">
-                <button type="submit" class="btn btn-main btn-block">REGISTRASI</button>
+              <div class="col-7 mr-auto ml-auto text-center">
+                <button type="submit" class="btn btn-main btn-block">LOGIN</button>
+              </div>
+              <div class="col-7 mr-auto ml-auto text-center">
+                <button type="submit" class="btn btn-transparent btn-block">MASUK TANPA LOGIN</button>
               </div>
             </div>
           </form>
         </div>
       </div>
-      <div class="footer">
-        <div class="text-center">
-          <p>Sudah punya akun? <span class="link-footer"><a href="login2.html">LOGIN Sekarang <i class="material-icons">keyboard_arrow_right</i></a></span></p>
-        </div>
+      <div class="push"></div>
+    </div>
+    <div class="footer">
+      <div class="text-center">
+        <p>Belum punya akun? <span class="link-footer"><a href="register2.html">REGISTRASI Sekarang <i class="material-icons">keyboard_arrow_right</i></a></span></p>
       </div>
     </div>
   </body>

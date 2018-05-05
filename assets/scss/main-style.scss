@@ -132,24 +132,16 @@ html, body{
     font-size: 15px;
   }
 }
-body {
-  //Prevent Scrolling when keyboard appears
-  @include for-size(phone-only) {
-    position: fixed;
-    // width: 100%;
-  }
-}
 .navbar{
   min-height: 52px;
 }
 .wrapper{
   // min-height: 52px;
   position: relative;
-  height: calc(100% - 66px); //52px = header height ,14px = margin top img
-  margin-bottom: -52px;
+  height: calc(100% - 52px); //52px = header height
 }
 .login-img-container{
-  margin: 14px 0 0;
+  margin: 1rem 0 0;
   height: 10rem;
   border: 2px solid $color-main;
 
@@ -163,7 +155,13 @@ body {
   }
 }
 
-
+body {
+  //Prevent Scrolling when keyboard appears
+  @include for-size(phone-only) {
+    position: fixed;
+    width: 100%;
+  }
+}
 button{
   margin: 0.95rem auto !important;
   border-radius: 6px !important;
@@ -489,12 +487,11 @@ input.partitioned {
 
 //FOOTER
 .footer{
-  z-index: 10;
   width: 100%;
   display: block;
-  // position: absolute !important;
+  position: absolute !important;
   bottom: 0;
-  // height: 52px;
+  height: 52px;
   background-color: $footer-bg-color;
   color: $font-main-color;
   font-weight: normal;
@@ -523,10 +520,6 @@ input.partitioned {
   @media (max-width: $width-iphone-5){
     font-size: 14px;
   }
-}
-
-.footer, .push{
-  height: 52px;
 }
 
 @media (max-width: $phone-upper-boundary){

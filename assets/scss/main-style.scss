@@ -122,7 +122,7 @@ html, body{
   position: relative;
   //Prevent Scrolling when keyboard appears
   @include for-size(phone-only) {
-    overflow: hidden;
+    // overflow: hidden;
     // overflow: auto;
   //   @-moz-document url-prefix(){
   //     overflow: hidden;
@@ -132,6 +132,15 @@ html, body{
     font-size: 15px;
   }
 }
+
+body {
+  //Prevent Scrolling when keyboard appears
+  @include for-size(phone-only) {
+    position: fixed;
+    width: 100%;
+  }
+}
+
 .navbar{
   min-height: 52px;
 }
@@ -139,7 +148,12 @@ html, body{
   // min-height: 52px;
   position: relative;
   height: calc(100% - 52px); //52px = header height
+
+  &.login{
+    height: calc(100% - 62px); //52px = header height
+  }
 }
+
 .login-img-container{
   margin: 1rem 0 0;
   height: 10rem;
@@ -155,13 +169,6 @@ html, body{
   }
 }
 
-body {
-  //Prevent Scrolling when keyboard appears
-  @include for-size(phone-only) {
-    position: fixed;
-    width: 100%;
-  }
-}
 button{
   margin: 0.95rem auto !important;
   border-radius: 6px !important;
@@ -486,40 +493,64 @@ input.partitioned {
 // }
 
 //FOOTER
-.footer{
+// .footer{
+//   width: 100%;
+//   display: block;
+//   position: absolute !important;
+//   bottom: 0;
+//   height: 52px;
+//   background-color: $footer-bg-color;
+//   color: $font-main-color;
+//   font-weight: normal;
+//   .link-footer{
+//     color: $footer-color-darker;
+//     font-weight: 500;
+//     a{
+//       color: $font-main-color;
+//     }
+//   }
+//   div{
+//     height: 100%;
+//     display: table;
+//     margin: 0 auto;
+//     p{
+//       display: table-cell;
+//       vertical-align: middle;
+//       text-align: center;
+//     }
+//   }
+//   .material-icons{
+//     vertical-align: middle;
+//     margin-left: 1rem;
+//     color: $black;
+//   }
+//   @media (max-width: $width-iphone-5){
+//     font-size: 14px;
+//   }
+// }
+footer{
+  position: absolute;
+  bottom: 0;
   width: 100%;
   display: block;
-  position: absolute !important;
-  bottom: 0;
   height: 52px;
+  position: absolute;
   background-color: $footer-bg-color;
-  color: $font-main-color;
-  font-weight: normal;
-  .link-footer{
-    color: $footer-color-darker;
-    font-weight: 500;
-    a{
-      color: $font-main-color;
-    }
-  }
   div{
-    height: 100%;
-    display: table;
-    margin: 0 auto;
-    p{
-      display: table-cell;
-      vertical-align: middle;
-      text-align: center;
+      height: 100%;
+      display: table;
+      margin: 0 auto;
+      p{
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+      }
     }
-  }
   .material-icons{
-    vertical-align: middle;
-    margin-left: 1rem;
-    color: $black;
-  }
-  @media (max-width: $width-iphone-5){
-    font-size: 14px;
-  }
+      vertical-align: middle;
+      // margin-left: 0.5rem;
+      color: $black;
+    }
 }
 
 @media (max-width: $phone-upper-boundary){

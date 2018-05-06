@@ -174,7 +174,7 @@ button{
   border-radius: 6px !important;
   outline:none;
   @media(max-height: $height-iphone-5){
-    margin: 0.75rem auto !important;
+    margin: 0.55rem auto !important;
 
   }
 }
@@ -308,6 +308,9 @@ input[type=number].pin-masked {
   @media(max-height: $height-phone-kecil){
     margin: 0.5rem 0;
   }
+  // @media(max-height: $height-phone-kecil){
+  //   margin: 0.5rem 0;
+  // }
 }
 
 .form-agreement{
@@ -390,7 +393,7 @@ input[type=number].pin-masked {
   }
   display: table;
   width: 100%;
-  padding: 1.5rem 0 0.5rem;
+  padding: 1.5rem 0 0;
   // font-size: 0.9rem;
   position: relative;
   .material-icons{

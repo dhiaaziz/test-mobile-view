@@ -323,6 +323,9 @@ input[type=number].pin-masked {
   a{
     color: $color-main;
   }
+  @media(max-height: $height-iphone-5){
+   margin-bottom: 0.5rem;
+  }
 }
 
 //placeholder on date
@@ -476,6 +479,23 @@ input.partitioned {
   background-size: 74px 3px;
   background-repeat: repeat-x;
   background-position-x: 43px;
+  font-size: 1.5rem;
+  width: 260px;
+  // max-width: 4ch;
+  // min-width:260px;
+  overflow: hidden;
+}
+
+input.partitioned2 {
+  margin-top: 1rem;
+  padding: 0 0 5px 17px;
+  letter-spacing: 31px;
+  border: 0;
+  background-image: linear-gradient(to left, $color-main 65%, rgba(255, 255, 255, 0) 0%);
+  background-position: bottom;
+  background-size: 44px 3px;
+  background-repeat: repeat-x;
+  background-position-x: 36px;
   font-size: 1.5rem;
   width: 260px;
   // max-width: 4ch;

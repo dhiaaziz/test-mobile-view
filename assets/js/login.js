@@ -20,10 +20,10 @@ if (obj !== null){
 function stopCarret() {
   // alert("test");
 
-if (obj.value.length > 3){
+  if (obj.value.length > 5){
 
-  setCaretPosition(obj, 3);
-}
+    setCaretPosition(obj, 0);
+  }
 }
 
 function setCaretPosition(elem, caretPos) {
